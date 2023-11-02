@@ -40,6 +40,23 @@ border-radius: 50px;
   column-gap: 15px;
   row-gap: 40px;
 }
+@media {min-width: 750px;} {
+  .video_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media {min-width: 751px;} and {max-width: 999px;} {
+  .video_grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media {max-width: 1000px;} {
+  .video_grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 
 .video-time {
   font-family: roboto,arial;
